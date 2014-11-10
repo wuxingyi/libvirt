@@ -1,0 +1,11 @@
+<disk type='network' device='disk'>
+    <driver name='qemu' type='raw' cache='none'/>
+    <auth username='wuxingyi'>
+        <secret type='ceph' uuid='df6f7ce8-6de5-9ee1-b78b-f2f21c8f7b34'/>
+    </auth>
+    <source protocol='rbd' name='volumes/datadisk'>
+        <host name='10.150.140.94' port='6789'/>
+    </source>
+    <target dev='vdb' bus='virtio'/>
+    <alias name='virtio-disk1'/>
+</disk>
