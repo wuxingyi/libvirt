@@ -8,4 +8,4 @@
 
 * 3.start vm with virsh create start.xml
 
-* 4.add an extra rbd disk through virsh device-attach <domain> datadisk.xml
+* 4.add an extra rbd disk through virsh attach-device <domain> datadisk.xml
